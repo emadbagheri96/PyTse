@@ -59,6 +59,10 @@ class PyTse:
     @property
     def symbols_data(self):
         return self.__symbols_data
+    
+    @property
+    def symbols_data_by_id(self):
+        return self.__symbols_data_by_id
 
     def __parse_symbol_data(self, symbol_raw_data):
         symbol_splitted_data = symbol_raw_data.split(",")
