@@ -116,6 +116,7 @@ class PyTse:
             100 * symbol.plc / symbol.py, 2)
         symbol.pe = "" if not symbol.eps else round(
             100 * symbol.pc / symbol.eps, 2)
+        symbol.mv = symbol.py * int(symbol.z)
         return symbol
 
     def __merge_symbol_data(self, symbol_data, best_limit):
